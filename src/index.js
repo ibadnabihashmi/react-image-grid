@@ -45,12 +45,20 @@ class Grid extends React.Component {
     let key = 0;
     this.props.images.forEach((image) => {
       var style = {
-        backgroundImage:"url('"+image.src+"')"
+        backgroundImage:"url('"+image.src+"')",
+        backgroundColor: 'white',
+        borderRadius: '0px !important',
+        border: 'solid 3px rgb(220, 220, 220) !important',
+        height: '175px',
+        padding: '5px',
+        marginRight: '10px',
+        marginTop: '10px',
+        width: '31.333333%'
       };
       images.push(
-      <a key={key+"_a"} href="#">
-        <div className="col-md-4 gallery-image" onClick={this.triggerLightBox.bind(this,key)} key={key} style={style}>
-        </div>
+        <a key={key+"_a"} href="#">
+          <div className="col-md-4" onClick={this.triggerLightBox.bind(this,key)} key={key} style={style}>
+          </div>
         </a>
       );
       key++;
