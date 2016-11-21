@@ -23,7 +23,9 @@
     "url": "https://github.com/ibadnabihashmi/react-image-grid/issues"
   },
   "homepage": "https://github.com/ibadnabihashmi/react-image-grid",
-  "dependencies": {},
+  "dependencies": {
+    "react-images": "^0.5.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.6.5",
     "babel-core": "^6.7.4",
